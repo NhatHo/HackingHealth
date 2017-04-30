@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">WhatsApnea</string>
+    <string name="create_profile">Create New Profile</string>
+    <string name="create_profile_label">New Profile</string>
+    <string name="full_name">Full Name</string>
+    <string name="birthday">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="allergies">Allergies</string>
+    <string name="medical_history">Medical History</string>
+    <string name="create">Create</string>
+    <string name="cannot">Cannot</string>
+    <string name="worse">Worse</string>
+    <string name="normal">Normal</string>
+    <string name="better">Better</string>
+    <string name="notes">Extra info</string>
+    <string name="save">Save</string>
+    <string name="surveyTitle">Notes</string>
+    <string name="manualButton">Start Now</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="@color/mainBackground">
+    <TextView
+        android:id="@+id/survey_title"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:text="@string/surveyTitle"
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+    <EditText
+        android:id="@+id/survey_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:ems="10"
+        android:inputType="textShortMessage"
+        android:textColor="@color/white"
+        android:hint="@string/notes"
+        android:textColorHint="@color/white"
+        android:layout_marginBottom="143dp"
+        android:layout_above="@+id/save_survey" />
+    <Button
+        android:id="@+id/save_survey"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:text="@string/save"
+        android:layout_marginBottom="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:id="@+id/rating_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:layout_above="@+id/survey_notes"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/status_worse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/redish"
+            android:text="@string/worse" />
+
+        <RadioButton
+            android:id="@+id/status_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:buttonTint="@color/redish"
+            android:text="@string/normal" />
+
+        <RadioButton
+            android:id="@+id/status_better"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/redish"
+            android:text="@string/better" />
+    </RadioGroup>
+</RelativeLayout>
